@@ -95,7 +95,7 @@ def save_clean(df: pd.DataFrame, out_dir: str) -> str:
 
 if __name__ == "__main__":
     RAW  = os.path.join(os.path.dirname(__file__), "Nassau_Candy_Distributor.csv")
-    OUT  = os.path.join(os.path.dirname(__file__), "../data")
+    OUT  = os.path.dirname(__file__)
     df   = load_and_clean(RAW)
     save_clean(df, OUT)
 

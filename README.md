@@ -88,6 +88,7 @@ nassau-candy/
 
 - Python 3.8 or higher
 - pip (comes with Python)
+- joblib
 
 ### Step 1 — Clone the repository
 
@@ -131,21 +132,21 @@ data/Nassau_Candy_Distributor.csv
 ### Step 2 — Clean & engineer features
 
 ```bash
-python scripts/01_preprocessing.py
+python scripts/reprocessing.py
 ```
 ✅ Creates `data/nassau_clean.csv`
 
 ### Step 3 — (Optional) Generate EDA charts
 
 ```bash
-python scripts/02_eda.py
+python scripts/eda.py
 ```
 ✅ Saves charts to `outputs/eda/`
 
 ### Step 4 — Train ML models
 
 ```bash
-python scripts/03_ml_models.py
+python scripts/ml_models.py
 ```
 ✅ Saves trained models to `models/` and charts to `outputs/ml/`
 ⏱ Takes 1–3 minutes depending on your machine.
@@ -153,7 +154,7 @@ python scripts/03_ml_models.py
 ### Step 5 — Launch the dashboard
 
 ```bash
-streamlit run scripts/04_dashboard.py
+streamlit run scripts/dashboard.py
 ```
 ✅ Opens automatically at **http://localhost:8501**
 

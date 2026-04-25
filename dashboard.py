@@ -20,8 +20,8 @@ warnings.filterwarnings("ignore")
 
 # ── Paths (cloud-safe — everything relative to THIS file) ─────────────────────
 BASE    = os.path.dirname(os.path.abspath(__file__))
-DATA    = os.path.join(BASE, "data", "nassau_clean.csv")
-RAW     = os.path.join(BASE, "data", "Nassau_Candy_Distributor.csv")
+DATA    = os.path.join(BASE, "nassau_clean.csv")
+RAW     = os.path.join(BASE, "Nassau_Candy_Distributor.csv")
 REG_PKL = os.path.join(BASE, "models", "regression_model.pkl")
 CLF_PKL = os.path.join(BASE, "models", "classification_model.pkl")
 CLU_PKL = os.path.join(BASE, "models", "clustering_model.pkl")

@@ -27,8 +27,8 @@ CLF_PKL = os.path.join(BASE, "models", "classification_model.pkl")
 CLU_PKL = os.path.join(BASE, "models", "clustering_model.pkl")
 EDA_OUT = os.path.join(BASE, "outputs", "ml")
 
-PRE_SCRIPT = os.path.join(BASE, "01_preprocessing.py")
-ML_SCRIPT  = os.path.join(BASE, "03_ml_models.py")
+PRE_SCRIPT = os.path.join(BASE, "preprocessing.py")
+ML_SCRIPT  = os.path.join(BASE, "ml_models.py")
 
 # ── Page config (must come before any other st. calls) ────────────────────────
 st.set_page_config(

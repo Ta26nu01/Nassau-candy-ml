@@ -14,7 +14,18 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import streamlit as st
+import subprocess, sys
 
+def run_setup():
+    if not os.path.exists(DATA):
+        st.info("⚙️ First run — cleaning data...")
+        subprocess.run([sys.executable, os.path.join(BASE, "01_preprocessing.py")], check=True)
+
+    if not os.path.exists(REG_PKL):
+        st.info("🤖 Training ML models (1–2 min)...")
+        subprocess.run([sys.executable, os.path.join(BASE, "03_ml_models.py")], check=True)
+
+run_setup()
 warnings.filterwarnings("ignore")
 
 # ── Paths ─────────────────────────────────────────────────────────────────────

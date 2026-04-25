@@ -36,9 +36,9 @@ from sklearn.decomposition    import PCA
 warnings.filterwarnings("ignore")
 
 BASE    = os.path.dirname(os.path.abspath(__file__))
-DATA    = os.path.join(BASE, "../data/nassau_clean.csv")
-MODDIR  = os.path.join(BASE, "../models")
-OUTDIR  = os.path.join(BASE, "../outputs/ml")
+DATA    = os.path.join(BASE, "nassau_clean.csv")
+MODDIR  = os.path.join(BASE, "models")
+OUTDIR  = os.path.join(BASE, "outputs", "ml")
 os.makedirs(MODDIR, exist_ok=True)
 os.makedirs(OUTDIR, exist_ok=True)
 

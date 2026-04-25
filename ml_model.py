@@ -61,8 +61,7 @@ def build_features(df: pd.DataFrame):
 
 
 def load_data():
-    if not os.path.exists(DATA):
-        sys.exit("❌  nassau_clean.csv not found — run 01_preprocessing.py first.")
+    
     df = pd.read_csv(DATA, parse_dates=["Order Date", "Ship Date"])
     return df
 

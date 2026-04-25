@@ -155,7 +155,7 @@ with st.sidebar:
 
     date_min   = df_raw["Order Date"].min().date()
     date_max   = df_raw["Order Date"].max().date()
-   date_range = st.date_input("Order Date Range", [date_min, date_max],
+    date_range = st.date_input("Order Date Range", [date_min, date_max],
                            min_value=date_min, max_value=date_max,
                            key="sidebar_date_range")
 

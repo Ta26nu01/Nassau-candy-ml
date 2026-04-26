@@ -1226,8 +1226,7 @@ with tabs[5]:
                 label   = "🔴 **DELAYED**" if pred_cl == 1 else "🟢 **EFFICIENT**"
                 conf    = max(pred_pr) * 100
                 st.info(f"🚦 **Delay Prediction:** {label}  (confidence: {conf:.1f}%)")    layout="wide",
-    initial_sidebar_state="expanded",
-)
+    initial_sidebar_state="expanded")
 
 # ── Auto-setup: runs preprocessing + ML if outputs are missing ────────────────
 def run_setup():
